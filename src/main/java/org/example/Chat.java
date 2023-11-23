@@ -15,6 +15,16 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import java.awt.BorderLayout;
 
+//1.Выполнить все задания семинара, если они не были решены, без ограничений по времени;
+
+//2.Отправлять сообщения из текстового поля сообщения в лог по нажатию кнопки
+// или по нажатию клавиши Enter на поле ввода сообщения;
+
+//3.Продублировать импровизированный лог (историю) чата в файле;
+
+//4.При запуске клиента чата заполнять поле истории из файла, если он существует.
+// Обратите внимание, что чаще всего история сообщений хранится на сервере и заполнение
+// истории чата лучше делать при соединении с сервером, а не при открытии окна клиента.
 
 
 public class Chat extends JFrame{
@@ -133,9 +143,9 @@ public class Chat extends JFrame{
 
     private void saveChatHistory() {
         try {
-            FileWriter writer = new FileWriter(MESSAGE_HISTORY_FILE, true); // Создаем объект FileWriter и указываем имя файла для сохранения и флаг для дописывания в файл
-            writer.write(areaMessage.getText()); // Записываем содержимое JTextArea в файл
-            writer.close(); // Закрываем FileWriter
+            FileWriter writer = new FileWriter(MESSAGE_HISTORY_FILE, true);
+            writer.write(areaMessage.getText());
+            writer.close();
 
             System.out.println("История чата сохранена в файл chat_history.txt");
         } catch (IOException e) {
@@ -166,18 +176,14 @@ public class Chat extends JFrame{
 
 
     public static void main(String[] args) {
-        // Connect to server
+
         new Chat();
 
-        // Check if message history file exists
         if (isMessageHistoryFileExists()) {
-            // Read and display message history
+
             displayMessageHistory();
         }
 
-        // Start chat
-
-        // Send and receive messages
     }
 
     private static void displayMessageHistory() {
