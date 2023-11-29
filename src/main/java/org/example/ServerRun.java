@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 /*
 Создать простейшее окно управления сервером (по сути, любым), содержащее две кнопки
@@ -11,13 +13,16 @@ import java.awt.event.ActionListener;
 (имитировать запуск и остановку сервера, соответственно) и выставлять внутри интерфейса
 соответствующее булево isServerWorking.
  */
-public class ServerRun extends JFrame{
+public class ServerRun extends JFrame implements Listener{
     private static final int WINDOW_HEIGHT = 555;
     private static final int WINDOW_WIDTH = 507;
     private static final int WINDOW_POSX = 800;
     private static final int WINDOW_POSY = 300;
     JButton btnStart = new JButton("Start Server");
     JButton btnStop = new JButton("Stop Server");
+
+    Server server = new Server( this );
+    ArrayList<String> log;
     boolean isServerWorking;
     ServerRun(){
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -29,19 +34,13 @@ public class ServerRun extends JFrame{
         btnStart.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!isServerWorking) {
-                    isServerWorking = true;
-                }
-                System.out.println("Статус сервера: " + isServerWorking);
+                server.start();
             }
         });
         btnStop.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (isServerWorking) {
-                    isServerWorking = false;
-                }
-                System.out.println("Статус сервера: " + isServerWorking);
+                server.stop();
             }
         });
         setLayout(new GridLayout(1,2));
@@ -52,5 +51,12 @@ public class ServerRun extends JFrame{
 
     public static void main(String[] args) {
         new ServerRun();
+    }
+
+
+    @Override
+    public void messageRes(String text) {
+        //log.add( String.format( text + "\n" ) );
+        System.out.println(text);
     }
 }

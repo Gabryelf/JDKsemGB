@@ -31,17 +31,6 @@ public class Server implements Listener{
 
 
     @Override
-    public void serverListener(boolean status) {
-
-        if (status){
-            stop();
-        } else {
-            start();
-        }
-
-    }
-
-    @Override
     public void messageRes(String text) {
 
     }

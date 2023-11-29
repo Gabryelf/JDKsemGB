@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="430224c2-3c69-48af-b227-c0b90e304a7b" name="Changes" comment="ChatFrameInit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
+    <list default="true" id="430224c2-3c69-48af-b227-c0b90e304a7b" name="Changes" comment="ChatInterface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ServerRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ServerRun.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700763263680</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ChatInterface">
+      <created>1701252383879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701252383879</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ChatFrame" />
     <MESSAGE value="ChatFrameInit" />
-    <option name="LAST_COMMIT_MESSAGE" value="ChatFrameInit" />
+    <MESSAGE value="ChatInterface" />
+    <option name="LAST_COMMIT_MESSAGE" value="ChatInterface" />
   </component>
 </project>
