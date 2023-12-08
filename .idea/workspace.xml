@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="430224c2-3c69-48af-b227-c0b90e304a7b" name="Changes" comment="DeveloperGroupInterface">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="430224c2-3c69-48af-b227-c0b90e304a7b" name="Changes" comment="CalculatorHomeWork" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +42,20 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Calculator">
+  <component name="RunManager" selected="Application.ArraysCompare">
+    <configuration name="ArraysCompare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.calculator.ArraysCompare" />
+      <module name="JDKsemGB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.calculator.Calculator" />
       <module name="JDKsemGB" />
@@ -61,19 +71,6 @@
     </configuration>
     <configuration name="Chat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Chat" />
-      <module name="JDKsemGB" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChatHistoryApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.ChatHistoryApp" />
       <module name="JDKsemGB" />
       <extension name="coverage">
         <pattern>
@@ -113,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArraysCompare" />
         <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.org.example.developer_group.Main" />
         <item itemvalue="Application.ServerRun" />
         <item itemvalue="Application.Chat" />
-        <item itemvalue="Application.ChatHistoryApp" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701261099877</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CalculatorHomeWork">
+      <created>1702025300538</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702025300538</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +189,7 @@
     <MESSAGE value="ChatInterface" />
     <MESSAGE value="ChatInterfaceInit" />
     <MESSAGE value="DeveloperGroupInterface" />
-    <option name="LAST_COMMIT_MESSAGE" value="DeveloperGroupInterface" />
+    <MESSAGE value="CalculatorHomeWork" />
+    <option name="LAST_COMMIT_MESSAGE" value="CalculatorHomeWork" />
   </component>
 </project>
